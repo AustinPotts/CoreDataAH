@@ -16,7 +16,7 @@ class AddRecipeViewController: UIViewController {
     
     var pickerData: [String] = []
     var recipeController: RecipeController?
-    var recipe: Recipe?
+    
     
     
     override func viewDidLoad() {
