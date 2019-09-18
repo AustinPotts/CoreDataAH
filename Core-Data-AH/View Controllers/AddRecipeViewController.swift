@@ -15,6 +15,7 @@ class AddRecipeViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     
     var pickerData: [String] = []
+    var pickerSelection: String?
     var recipeController: RecipeController?
     
     
@@ -28,7 +29,14 @@ class AddRecipeViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
-    
+        guard let title = titleTextField.text,
+            !title.isEmpty,
+           let cuisine = pickerSelection,
+            let directions = textView.text,
+            !directions.isEmpty else{return}
+        
+        recipeController?.createRecipe(title: title, cuisine: cuisine, directions: directions)
+        navigationController?.popViewController(animated: true)
     
     }
     
@@ -51,6 +59,10 @@ extension AddRecipeViewController: UIPickerViewDelegate, UIPickerViewDataSource 
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+       pickerSelection = pickerData[row]
     }
     
 }
