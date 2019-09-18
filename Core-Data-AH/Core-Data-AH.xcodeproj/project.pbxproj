@@ -15,6 +15,7 @@
 		4556A6BC2331B19800FD0CC5 /* AddRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6BB2331B19800FD0CC5 /* AddRecipeViewController.swift */; };
 		4556A6C12331B2C800FD0CC5 /* Cookbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6BF2331B2C800FD0CC5 /* Cookbook.xcdatamodeld */; };
 		4556A6C32331B3D100FD0CC5 /* Recipe+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6C22331B3D100FD0CC5 /* Recipe+Convenience.swift */; };
+		4556A6C62331B58C00FD0CC5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6C52331B58C00FD0CC5 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4556A6BB2331B19800FD0CC5 /* AddRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeViewController.swift; sourceTree = "<group>"; };
 		4556A6C02331B2C800FD0CC5 /* Cookbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cookbook.xcdatamodel; sourceTree = "<group>"; };
 		4556A6C22331B3D100FD0CC5 /* Recipe+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Convenience.swift"; sourceTree = "<group>"; };
+		4556A6C52331B58C00FD0CC5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +46,7 @@
 		4556A69B2331AD2E00FD0CC5 = {
 			isa = PBXGroup;
 			children = (
-				4556A6C22331B3D100FD0CC5 /* Recipe+Convenience.swift */,
-				4556A6BF2331B2C800FD0CC5 /* Cookbook.xcdatamodeld */,
+				4556A6C52331B58C00FD0CC5 /* CoreDataStack.swift */,
 				4556A6BE2331B1F400FD0CC5 /* Model */,
 				4556A6BD2331B1E500FD0CC5 /* View Controllers */,
 				4556A6A62331AD2E00FD0CC5 /* Core-Data-AH */,
@@ -85,6 +86,8 @@
 		4556A6BE2331B1F400FD0CC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4556A6BF2331B2C800FD0CC5 /* Cookbook.xcdatamodeld */,
+				4556A6C22331B3D100FD0CC5 /* Recipe+Convenience.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				4556A6C32331B3D100FD0CC5 /* Recipe+Convenience.swift in Sources */,
 				4556A6C12331B2C800FD0CC5 /* Cookbook.xcdatamodeld in Sources */,
 				4556A6BC2331B19800FD0CC5 /* AddRecipeViewController.swift in Sources */,
+				4556A6C62331B58C00FD0CC5 /* CoreDataStack.swift in Sources */,
 				4556A6A82331AD2E00FD0CC5 /* AppDelegate.swift in Sources */,
 				4556A6BA2331B18500FD0CC5 /* RecipeTableViewController.swift in Sources */,
 			);
