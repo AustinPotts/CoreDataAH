@@ -54,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="1165.217391304348" y="88.392857142857139"/>
         </scene>
-        <!--Recipe-->
+        <!--Add Recipe-->
         <scene sceneID="dTj-ob-pRe">
             <objects>
                 <viewController id="mE4-20-5Rc" customClass="AddRecipeViewController" customModule="Core_Data_AH" customModuleProvider="target" sceneMemberID="viewController">
@@ -125,9 +125,18 @@ Ingredients:</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VIb-5x-DbO"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Recipe" id="Z0M-Wi-1y3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hj7-Q9-li8"/>
+                    <navigationItem key="navigationItem" title="Add Recipe" id="Z0M-Wi-1y3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hj7-Q9-li8">
+                            <connections>
+                                <action selector="save:" destination="mE4-20-5Rc" id="2SG-sD-nyG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cuisinePicker" destination="TSZ-8w-Fbx" id="XvA-R0-qtS"/>
+                        <outlet property="textView" destination="dr6-Y5-oH1" id="8no-AG-gXe"/>
+                        <outlet property="titleTextField" destination="TbR-B5-jF9" id="um6-Or-bXW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EfB-O1-CJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
