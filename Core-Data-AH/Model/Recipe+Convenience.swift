@@ -11,10 +11,33 @@ import CoreData
 
 
 extension Recipe {
-    convenience init(title: String, cuisine: String, directions: String, context: NSManagedObjectContext ){
+    
+    //Computed property to initialize(return) the Representation of the Core Data Model
+    var recipeRepresentation: RecipeRepresentation? {
+        guard let title = title,
+        let cuisine = cuisine,
+         let directions = directions,
+            let identifier = identifier?.uuidString else{return nil}
+        return RecipeRepresentation(title: title, directions: directions, cuisine: cuisine, identifer: identifier)
+    }
+    
+    
+    
+    
+   
+    convenience init(title: String, cuisine: String, directions: String, identifier: UUID = UUID(), context: NSManagedObjectContext ){
         self.init(context: context)
         self.title = title
         self.cuisine = cuisine
-        self.directions = directions 
+        self.directions = directions
+        self.identifier = identifier
     }
+    
+    @discardableResult convenience init?(recipeRepresentation: RecipeRepresentation, context: NSManagedObjectContext) {
+        guard let identifier = UUID(uuidString: recipeRepresentation.identifer) else {return nil}
+        
+        self.init(title: recipeRepresentation.title, cuisine: recipeRepresentation.cuisine, directions: recipeRepresentation.directions, identifier: identifier, context: context)
+    }
+    
+    
 }
