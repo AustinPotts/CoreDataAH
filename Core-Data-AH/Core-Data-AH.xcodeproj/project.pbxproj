@@ -32,6 +32,7 @@
 		4556A6C22331B3D100FD0CC5 /* Recipe+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe+Convenience.swift"; sourceTree = "<group>"; };
 		4556A6C52331B58C00FD0CC5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		4556A6C72331B66800FD0CC5 /* RecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeController.swift; sourceTree = "<group>"; };
+		4556A6D82336EB3200FD0CC5 /* Cookbook 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Cookbook 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,9 +376,10 @@
 		4556A6BF2331B2C800FD0CC5 /* Cookbook.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				4556A6D82336EB3200FD0CC5 /* Cookbook 2.xcdatamodel */,
 				4556A6C02331B2C800FD0CC5 /* Cookbook.xcdatamodel */,
 			);
-			currentVersion = 4556A6C02331B2C800FD0CC5 /* Cookbook.xcdatamodel */;
+			currentVersion = 4556A6D82336EB3200FD0CC5 /* Cookbook 2.xcdatamodel */;
 			path = Cookbook.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
