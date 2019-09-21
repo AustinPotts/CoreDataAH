@@ -17,6 +17,7 @@
 		4556A6C32331B3D100FD0CC5 /* Recipe+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6C22331B3D100FD0CC5 /* Recipe+Convenience.swift */; };
 		4556A6C62331B58C00FD0CC5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6C52331B58C00FD0CC5 /* CoreDataStack.swift */; };
 		4556A6C82331B66800FD0CC5 /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6C72331B66800FD0CC5 /* RecipeController.swift */; };
+		4556A6DA2336EBB100FD0CC5 /* RecipeRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4556A6D92336EBB100FD0CC5 /* RecipeRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4556A6C52331B58C00FD0CC5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		4556A6C72331B66800FD0CC5 /* RecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeController.swift; sourceTree = "<group>"; };
 		4556A6D82336EB3200FD0CC5 /* Cookbook 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Cookbook 2.xcdatamodel"; sourceTree = "<group>"; };
+		4556A6D92336EBB100FD0CC5 /* RecipeRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 		4556A69B2331AD2E00FD0CC5 = {
 			isa = PBXGroup;
 			children = (
+				4556A6D92336EBB100FD0CC5 /* RecipeRepresentation.swift */,
 				4556A6C72331B66800FD0CC5 /* RecipeController.swift */,
 				4556A6C52331B58C00FD0CC5 /* CoreDataStack.swift */,
 				4556A6BE2331B1F400FD0CC5 /* Model */,
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4556A6DA2336EBB100FD0CC5 /* RecipeRepresentation.swift in Sources */,
 				4556A6C32331B3D100FD0CC5 /* Recipe+Convenience.swift in Sources */,
 				4556A6C12331B2C800FD0CC5 /* Cookbook.xcdatamodeld in Sources */,
 				4556A6C82331B66800FD0CC5 /* RecipeController.swift in Sources */,
