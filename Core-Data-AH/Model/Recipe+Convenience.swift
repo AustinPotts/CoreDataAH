@@ -18,7 +18,7 @@ extension Recipe {
         let cuisine = cuisine,
          let directions = directions,
             let identifier = identifier?.uuidString else{return nil}
-        return RecipeRepresentation(title: title, directions: directions, cuisine: cuisine, identifer: identifier)
+        return RecipeRepresentation(title: title, directions: directions, cuisine: cuisine, identifier: identifier)
     }
     
     
@@ -34,7 +34,7 @@ extension Recipe {
     }
     
     @discardableResult convenience init?(recipeRepresentation: RecipeRepresentation, context: NSManagedObjectContext) {
-        guard let identifier = UUID(uuidString: recipeRepresentation.identifer) else {return nil}
+        guard let identifier = UUID(uuidString: recipeRepresentation.identifier) else {return nil}
         
         self.init(title: recipeRepresentation.title, cuisine: recipeRepresentation.cuisine, directions: recipeRepresentation.directions, identifier: identifier, context: context)
     }

@@ -14,6 +14,6 @@ struct RecipeRepresentation: Codable {
     let title: String
     let directions: String
     let cuisine: String
-    let identifer: String
+    let identifier: String
     
 }

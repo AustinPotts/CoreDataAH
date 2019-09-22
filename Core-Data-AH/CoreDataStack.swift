@@ -30,16 +30,23 @@ class CoreDataStack {
         return container
     }() // Creating only one instance for use
     
+    
+    
+    
     var mainContext: NSManagedObjectContext {
         return container.viewContext
     }
     
-    func saveToPersistentStore() {
+    func save(context: NSManagedObjectContext = CoreDataStack.share.mainContext) {
+        context.performAndWait {
+            
+        
         do{
             try mainContext.save()
         } catch {
             NSLog("Error saving context \(error)")
             mainContext.reset()
+        }
         }
     }
     
