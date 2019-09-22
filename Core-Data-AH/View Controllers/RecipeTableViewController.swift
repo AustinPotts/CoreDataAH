@@ -13,6 +13,8 @@ class RecipeTableViewController: UITableViewController {
 
     
     let recipeController = RecipeController()
+    
+    
     lazy var fetchResultController: NSFetchedResultsController<Recipe> = {
         
         let fetchRequest: NSFetchRequest<Recipe> = Recipe.fetchRequest()
@@ -119,6 +121,17 @@ class RecipeTableViewController: UITableViewController {
         if segue.identifier == "AddRecipeSegue" {
             guard let addRecipeVC = segue.destination as? AddRecipeViewController else{return}
             addRecipeVC.recipeController = recipeController
+            
+        } else if segue.identifier == "RecipeDetailSegue" {
+            guard let detailVC = segue.destination as? AddRecipeViewController,
+                let indexPath = tableView.indexPathForSelectedRow else{return}
+            
+            let recipe = fetchResultController.object(at: indexPath)
+            
+            detailVC.recipe = recipe
+            detailVC.recipeController = recipeController
+            
+            
         }
     }
     

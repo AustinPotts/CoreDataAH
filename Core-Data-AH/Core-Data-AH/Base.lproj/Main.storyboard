@@ -35,6 +35,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="mE4-20-5Rc" kind="show" identifier="RecipeDetailSegue" id="an8-Cv-BH2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -140,7 +143,7 @@ Ingredients:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EfB-O1-CJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992.753623188406" y="-241.07142857142856"/>
+            <point key="canvasLocation" x="2025" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L9A-eu-Gq9">
@@ -161,4 +164,7 @@ Ingredients:</string>
             <point key="canvasLocation" x="255.07246376811597" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0J8-DC-7E3"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -16,12 +16,16 @@ class AddRecipeViewController: UIViewController {
     
     var pickerData: [String] = []
     var pickerSelection: String?
-    var recipeController: RecipeController?
     
+    var recipeController: RecipeController?
+    var recipe: Recipe?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateViews()
+        
         cuisinePicker.dataSource = self
         cuisinePicker.delegate = self
         
@@ -40,6 +44,12 @@ class AddRecipeViewController: UIViewController {
     
     }
     
+    func updateViews(){
+        title = recipe?.title ?? "Create Recipe"
+        
+        titleTextField.text = recipe?.title
+        
+    }
    
     
   
